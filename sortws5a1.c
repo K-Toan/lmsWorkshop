@@ -10,5 +10,4 @@ int main(){
             printf("%5d", i, count++);
         if(count == c)
             printf("\n", count = 0);
-    }
-}
+}}
