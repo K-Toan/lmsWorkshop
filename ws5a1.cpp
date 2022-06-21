@@ -9,8 +9,8 @@ void eratosthenes(int lowerLimit, int upperLimit, int col)
     printf("# of columns: %d\n", col);
     
     int isPrime[2000];
-    isPrime[0] = false;
-    isPrime[1] = false;
+    isPrime[0] = 0;
+    isPrime[1] = 0;
     
     for(int index = 2; index <= upperLimit; index++)
     {
