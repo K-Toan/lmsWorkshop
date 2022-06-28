@@ -7,6 +7,7 @@ int main()
     int tosses, heads, tails, temp, sel;
     while(1)
     {
+        tosses = heads = tails = 0;
         printf("Select options: \n1. Start tossing\n0. Exit");
         printf("\nYour selection (0 -> 1): "); scanf("%d", &sel);
         if(sel == 0)
