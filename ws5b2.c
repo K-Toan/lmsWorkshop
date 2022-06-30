@@ -1,17 +1,21 @@
 #include<stdio.h>
 
-void stringReverse(char s[])
+void stringReverse(char s[], int length)
 {
-    int length = 0;
-    while(s[length] != NULL)
-        ++length;
-
     while(length >= 0)
         printf("%c", s[--length]);
 }
 
 int main()
 {
-    char s[200]; scanf("%[^\n]s", s);
-    stringReverse(s);
+    char s[200];
+    int length = 0;
+    while(1)
+    {
+        char c = getchar();
+        if((int)c == 10)
+            break;
+        s[length++] = c;
+    }
+    stringReverse(s, length);
 }
